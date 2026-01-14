@@ -474,33 +474,95 @@ img {
     font-family: var(--font-serif);
     font-size: 1.125rem;
     color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.contact-details {
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: var(--accent);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    background: var(--accent-dark);
+}
+
+.contact-alt {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.contact-link,
 .contact-location {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1rem;
-    color: var(--text);
-}
-
-.contact-link:hover {
-    color: var(--accent);
-}
-
-.contact-link svg,
-.contact-location svg {
-    width: 18px;
-    height: 18px;
+    font-size: 0.9375rem;
     color: var(--text-light);
+}
+
+.contact-location svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* ===== Footer ===== */
@@ -632,9 +694,12 @@ img {
         align-items: center;
     }
 
-    .contact-details {
-        flex-direction: column;
-        gap: 1rem;
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
     }
 
     .about-sidebar {
