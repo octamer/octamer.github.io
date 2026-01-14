@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog post description goes here">
+    <title>Blog Post Title | Srikrishnan Mallipeddi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Blog Post Specific Styles */
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+
+        .blog-post-header {
+            margin-bottom: 48px;
+        }
+
+        .blog-post-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+        }
+
+        .blog-post-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .blog-post-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .blog-post-content {
+            font-size: 1.125rem;
+            line-height: 1.9;
+        }
+
+        .blog-post-content h2 {
+            font-family: var(--font-serif);
+            margin: 48px 0 24px;
+        }
+
+        .blog-post-content h3 {
+            margin: 32px 0 16px;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 24px;
+            color: var(--text-light);
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: var(--text-light);
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 24px;
+            margin: 32px 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .blog-post-content img {
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .blog-post-content code {
+            background: var(--bg-tertiary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .blog-post-content pre {
+            background: var(--primary-dark);
+            color: white;
+            padding: 24px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+
+        .blog-post-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .blog-post-footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .blog-post-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .blog-tag {
+            background: var(--bg-secondary);
+            color: var(--text-muted);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        .blog-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .blog-nav a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-title {
+                font-size: 1.75rem;
+            }
+
+            .blog-post-excerpt {
+                font-size: 1.125rem;
+            }
+
+            .blog-post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html#home" class="nav-logo">SM</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#research" class="nav-link">Research</a></li>
+                <li><a href="../index.html#publications" class="nav-link">Publications</a></li>
+                <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post">
+        <header class="blog-post-header">
+            <div class="blog-post-meta">
+                <span>January 15, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+            </div>
+            <h1 class="blog-post-title">Your Blog Post Title Goes Here</h1>
+            <p class="blog-post-excerpt">
+                A compelling introduction or summary of your blog post that gives readers
+                a preview of what they'll learn. Keep it engaging and informative.
+            </p>
+        </header>
+
+        <div class="blog-post-content">
+            <h2>Introduction</h2>
+            <p>
+                Start your blog post with an engaging introduction that hooks the reader.
+                Explain why this topic matters and what value they'll get from reading.
+            </p>
+
+            <h2>Main Section</h2>
+            <p>
+                Your main content goes here. Break it up into logical sections with clear
+                headings to make it easy to scan and read.
+            </p>
+
+            <p>
+                You can include various formatting elements:
+            </p>
+
+            <ul>
+                <li>Bullet points for lists</li>
+                <li>Another important point</li>
+                <li>And another one</li>
+            </ul>
+
+            <blockquote>
+                "Include quotes to add credibility or highlight important points from your
+                research or from other experts in the field."
+            </blockquote>
+
+            <h3>Subsection</h3>
+            <p>
+                Use subsections to organize complex topics. This helps readers navigate
+                and find the specific information they're looking for.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                Wrap up your post with key takeaways and a call to action. Encourage
+                readers to comment, share, or explore related content.
+            </p>
+        </div>
+
+        <footer class="blog-post-footer">
+            <div class="blog-post-tags">
+                <span class="blog-tag">Biotech</span>
+                <span class="blog-tag">Research</span>
+                <span class="blog-tag">Science</span>
+            </div>
+
+            <nav class="blog-nav">
+                <a href="../index.html#blog">&larr; Back to Blog</a>
+                <!-- Add links to prev/next posts when you have more -->
+            </nav>
+        </footer>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Srikrishnan Mallipeddi. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#research">Research</a>
+                    <a href="../index.html#publications">Publications</a>
+                    <a href="../index.html#blog">Blog</a>
+                    <a href="../index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
